@@ -18,24 +18,44 @@
         </h1>
     </header>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-3 bg-light">
-                <h5 class="mt-1">Enter city name:</h5>
+            <div class="col-sm-4 bg-light">
+
+                <h4 class="pt-1"><strong>Enter city name here:</strong></h4>
+
                 <div class="input-group mb-3">
-                    <input id="enterCity" type="text" class="form-control" placeholder="Enter city name">
-                    <div class="inputGroupAppend">
-                        <button class="btn btnMain" type="button" id="searchButton">
-                            <i class="fas faSearch"></i>
-                        </button>
+                    <input type="text"class="form-control" id="search-city">
+                    <div class="input-group-append">
+                        <button class="bin bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
-            
+
             </div>
+            <div class="col-sm-8">
+                <div class="row ml-2 border border-dark rounded">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                        <p>Temperature:<span class="current" id="temperature"></span></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-12" id="future-weather">
+                    <h2>Forecast:</h2>
+                    <div class="row text-light">
+                        <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                            <p id="fDate0"></p>
+                            <p id="fImg0"></p>
+                            <p>Temp:<span id="fTemp0"></span></p>
+                            <p>Humidity:<span id="fHumidity0"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </div>
-
 
         <aside>
             <button class="btn btn-danger" id="fetch-button"></button>
