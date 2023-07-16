@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-</head>
 
 <body>
 
     <header>
         <h1>
             <nav>
-             <a class="weatherSiteLink" href="https://dizzymouse0.github.io/weather-dashboard/">5-Day Forecast</a>
+             <a class="weatherSiteLink container-fluid mt-2 text-center p-2" style="background-color: purple; color: grey" href="https://dizzymouse0.github.io/weather-dashboard/">5-Day Forecast</a>
             </nav>
         </h1>
     </header>
 
-    <form id="searchForm"
-    <main>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 bg-light">
+                <h5 class="mt-1">Enter city name:</h5>
+                <div class="input-group mb-3">
+                    <input id="enterCity" type="text" class="form-control" placeholder="Enter city name">
+                    <div class="inputGroupAppend">
+                        <button class="btn btnMain" type="button" id="searchButton">
+                            <i class="fas faSearch"></i>
+                        </button>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+
         <aside>
             <button class="btn btn-danger" id="fetch-button"></button>
         </aside>
