@@ -3,8 +3,8 @@
 }
 
 body { 
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 h3{
@@ -15,9 +15,7 @@ h3{
     font-size: 0.9em;
 }
 
-span{
-    font-size: 1em;
-}
+
 
 li:hover{
     background-color: rgba(35, 119, 202, 0.185);
