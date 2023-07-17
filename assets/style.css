@@ -20,6 +20,6 @@ span{
 }
 
 li:hover{
-    background-color: lightslategray;
+    background-color: rgba(35, 119, 202, 0.185);
     text-decoration: underline;
 }
