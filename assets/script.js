@@ -44,7 +44,6 @@ function currentWeather(city){
     
         // parse response to display crrent weather with city name, date and weather icon
         console.log(response);
-
         var weathericon= response.weather[0].icon;
         var iconurl="https://openweathermap.org/img/wn/"+weathericon +"@2x.png";
         var date=new Date(response.dt*1000).toLocaleDateString();
