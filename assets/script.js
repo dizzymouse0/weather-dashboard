@@ -61,7 +61,7 @@ function currentWeather(city){
         var windsmph=(ws*2.237).toFixed(1);
         $(currentWSpeed).html(windsmph+"MPH");
    
-        //show UV index
+        // show UV index
         UVIndex(response.coord.lon,response.coord.lat);
         forecast(response.id);
         if(response.code==200){
@@ -114,7 +114,6 @@ function forecast(cityid){
             var tempK= response.list[((i+1)*8)-1].main.temp;
             var tempF=(((tempK-273.5)*1.80)+32).toFixed(2);
             var humidity= response.list[((i+1)*8)-1].main.humidity;
-        
             $("#fDate"+i).html(date);
             $("#fImg"+i).html("<img src="+iconurl+">");
             $("#fTemp"+i).html(tempF+"&#8457");
@@ -138,10 +137,9 @@ function invokePastSearch(event){
         city=liEl.textContent.trim();
         currentWeather(city);
     }
-
 }
 
-
+// rendering function
 function loadlastCity(){
     $("ul").empty();
     var sCity = JSON.parse(localStorage.getItem("cityname"));
@@ -155,7 +153,7 @@ function loadlastCity(){
     }
 
 }
-// clears search history from the page
+// clear search history from the page
 function clearHistory(event){
     event.preventDefault();
     sCity=[];
